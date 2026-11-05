@@ -89,7 +89,7 @@ footer{max-width:1140px;margin:0 auto;padding:0 20px 40px;color:var(--muted);fon
 <header>
   <div class="brand"><div class="logo">A</div><div><h1>Archivéo</h1><p class="tag">Où sont les archives en ligne ? Un seul endroit pour le savoir.</p></div></div>
   <div class="hero" style="position:relative">
-    <h2>528 services d'archives et associations, un seul annuaire.</h2>
+    <h2>816 services d'archives et associations, un seul annuaire.</h2>
     <p>Départementales, nationales et militaires, municipales, cercles généalogiques, entreprises, cultes, hôpitaux : ce qui est numérisé, pour quelle période, et le lien direct.</p>
   </div>
   <div class="modes">
@@ -133,9 +133,9 @@ footer{max-width:1140px;margin:0 auto;padding:0 20px 40px;color:var(--muted);fon
 <script src="data.js"></script>
 <script>
 const FORM="https://docs.google.com/forms/d/e/1FAIpQLSf_EWSjDkFgopHnUzdTPbpLzltVfXLPjAGyppfI6ad-6Op-1A/viewform?usp=pp_url";
-const FORM_FAMILLE={departementale:"départementales",nationale:"nationales-militaires",municipale:"municipales-régionales",association:"association",privee:"entreprise-culte-privé"};
+const FORM_FAMILLE={officiel:"municipales-régionales",departementale:"départementales",nationale:"nationales-militaires",municipale:"municipales-régionales",association:"association",privee:"entreprise-culte-privé"};
 function lienCorrection(d){return FORM+"&entry.811251541=Correction&entry.406488118="+encodeURIComponent(d.nom)+"&entry.1683125055="+encodeURIComponent(d.url||"")+"&entry.289349202="+encodeURIComponent(FORM_FAMILLE[d.cat]||"")+"&entry.1476301625="+encodeURIComponent([d.num,d.territoire||d.region||""].filter(Boolean).join(" "));}
-const CATS=[["all","Tout"],["departementale","Départementales"],["nationale","Nationales & guerres"],["municipale","Municipales & régionales"],["association","Associations"],["privee","Entreprises & privées"],["fav","★ Favoris"]];
+const CATS=[["all","Tout"],["departementale","Départementales"],["nationale","Nationales & guerres"],["municipale","Municipales & régionales"],["association","Associations"],["privee","Entreprises & privées"],["officiel","Autres (annuaire officiel)"],["fav","★ Favoris"]];
 const FONDS=["État civil","Tables décennales","Recensements","Registres matricules","Cadastre","Notariat","Successions","Presse"];
 let cat="all", fond=null, nomOnly=false, limit=60;
 let favs=new Set(); try{favs=new Set(JSON.parse(localStorage.getItem("archiveo-favs")||"[]"))}catch(e){}

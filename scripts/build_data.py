@@ -58,5 +58,11 @@ for r in load("privees.csv"):
     out.append({"cat":"privee","nom":r["nom"],"type":r["categorie"],"url":r["url"],"site":re.sub(r"^https?://(www\.)?","",r["url"]).rstrip("/"),
         "desc":r["contenu_genealogique"],"acces":r["acces"],"nominatif":r["recherche_nominative"],"verif":"à vérifier" in r["source"]})
 
+for r in load("officiel.csv"):
+    out.append({"cat":"officiel","nom":r["nom"],"type":r["categorie"],"num":r["code_postal"],"territoire":r["ville"],
+        "region":REG.get(r["code_postal"],""),"sub":SUB.get(r["code_postal"],""),"url":r["url"],"site":re.sub(r"^https?://(www\.)?","",r["url"]).rstrip("/"),
+        "desc":"Service recensé dans l'annuaire officiel des archives publiques (FranceArchives). Fonds en ligne non encore décrits : à compléter.",
+        "note":"Fiche FranceArchives : "+r["lien_francearchives"],"verif":False})
+
 open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data.js"),"w",encoding="utf-8").write("const DATA="+json.dumps(out,ensure_ascii=False)+";")
 print(len(out), sum(1 for o in out if o["verif"]))

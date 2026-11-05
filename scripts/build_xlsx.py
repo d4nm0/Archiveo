@@ -24,6 +24,8 @@ SHEETS = [
  ("Associations généalogiques", "associations.csv",
   {"nom":"Association","departement":"Dép.","territoire":"Territoire","url":"URL","contenu_en_ligne":"Ce qui est en ligne",
    "acces":"Accès","recherche_nominative":"Recherche par nom","source":"Source / vérification"}),
+ ("Autres (annuaire officiel)", "officiel.csv",
+  {"nom":"Service","categorie":"Catégorie officielle","code_postal":"Dép.","ville":"Ville","url":"URL","lien_francearchives":"Fiche FranceArchives","source":"Source"}),
  ("Entreprises & privées", "privees.csv",
   {"nom":"Organisme","categorie":"Catégorie","url":"URL","contenu_genealogique":"Contenu utile en généalogie",
    "acces":"Accès","recherche_nominative":"Recherche par nom","source":"Source / vérification"}),
