@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="archiveo" content="site">
+<title>Archivéo — annuaire des archives en ligne</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--paper:#fffdf8;--ink:#2b241c;--muted:#7a6f61;--line:#e4dccd;--accent:#8b3a2f;--accent-soft:#f3e2dd;
+--ok:#2f6b4f;--ok-soft:#dfeee5;--warn:#9a6a12;--warn-soft:#f7ead0;--no:#8a4a4a;--no-soft:#f1dede;--radius:14px}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{padding:28px 20px 14px;max-width:1140px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .logo{width:40px;height:40px;border-radius:10px;background:var(--accent);display:grid;place-items:center;color:#fff;font-family:Fraunces,serif;font-weight:700;font-size:22px}
+h1{font-family:Fraunces,serif;font-weight:700;font-size:26px;margin:0}
+.tag{color:var(--muted);font-size:14px;margin:2px 0 0}
+.hero h2{font-family:Fraunces,serif;font-weight:500;font-size:clamp(22px,4vw,34px);margin:18px 0 6px;line-height:1.15}
+.hero p{margin:0;color:var(--muted);max-width:640px}
+.search{margin-top:16px}
+.search input{width:100%;font:inherit;font-size:16px;padding:14px 16px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--ink);outline:none}
+.search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.cats{display:flex;gap:6px;margin-top:14px;border-bottom:1px solid var(--line);overflow-x:auto}
+.cat{font:inherit;font-size:14px;font-weight:600;background:none;border:none;padding:10px 12px;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap}
+.cat.on{color:var(--accent);border-bottom-color:var(--accent)}
+.cat small{font-weight:500;opacity:.7}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.chip{font:inherit;font-size:13px;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+main{max-width:1140px;margin:0 auto;padding:0 20px 60px}
+.stats{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:13px;margin:14px 0 10px}
+.stats b{color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:10px}
+.card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.card h3{font-family:Fraunces,serif;font-weight:700;font-size:18px;margin:0;line-height:1.2}
+.card .k{font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.card .site{font-size:12px;color:var(--muted);word-break:break-all}
+.card p{margin:0;font-size:13.5px;color:#4a4238}
+.fonds{display:flex;flex-direction:column;gap:5px}
+.fond{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:13.5px;padding:6px 10px;border-radius:9px;background:#f9f5ee}
+.fond .l{display:flex;align-items:center;gap:8px;min-width:0}
+.fond .per{font-size:12px;color:var(--muted);white-space:nowrap}
+.dot{width:9px;height:9px;border-radius:50%;flex:none}
+.dot.ok{background:var(--ok)}.dot.warn{background:var(--warn)}.dot.no{background:#c9b8b8}
+.badge{font-size:11px;font-weight:600;padding:3px 8px;border-radius:999px;white-space:nowrap}
+.badge.ok{background:var(--ok-soft);color:var(--ok)}.badge.warn{background:var(--warn-soft);color:var(--warn)}.badge.no{background:var(--no-soft);color:var(--no)}
+.badge.g{background:#eee9df;color:var(--muted)}
+.meta{display:flex;gap:6px;flex-wrap:wrap}
+.card .foot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:auto;padding-top:4px}
+.btn{font:inherit;font-size:14px;font-weight:600;text-decoration:none;color:#fff;background:var(--accent);padding:9px 14px;border-radius:10px;display:inline-flex;align-items:center;gap:6px}
+.btn.off{background:#ccc3b6;pointer-events:none}
+.star{font:inherit;background:none;border:1px solid var(--line);border-radius:10px;padding:8px 10px;cursor:pointer;color:var(--muted)}
+.star.on{color:var(--warn);border-color:var(--warn)}
+.note{font-size:12px;color:var(--muted);background:#f3ede2;padding:8px 10px;border-radius:9px}
+.empty{padding:40px;text-align:center;color:var(--muted)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:10px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.more{display:block;margin:20px auto 0;font:inherit;font-weight:600;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 18px;cursor:pointer}
+footer{max-width:1140px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font-size:12px}
+ .modes{display:flex;gap:6px;margin-top:16px}
+.mode{font:inherit;font-size:14px;font-weight:600;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:8px 14px;color:var(--muted);cursor:pointer}
+.mode.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.qform{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:16px}
+.qform input{font:inherit;font-size:15px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);outline:none;width:100%}
+.qform input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.qform .go{font:inherit;font-size:15px;font-weight:600;color:#fff;background:var(--accent);border:none;border-radius:12px;padding:12px 16px;cursor:pointer}
+.hint{font-size:13px;color:var(--muted);margin:10px 0 0;max-width:720px}
+.grp{grid-column:1/-1;font-family:Fraunces,serif;font-size:19px;margin:14px 0 -4px}
+.grp small{font-family:Inter,sans-serif;font-size:13px;color:var(--muted);font-weight:400;margin-left:8px}
+.why{font-size:12.5px;color:var(--ok);background:var(--ok-soft);padding:7px 10px;border-radius:9px}
+.why.w{color:var(--warn);background:var(--warn-soft)}
+.ext{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px;padding:10px 14px;border:1px dashed var(--line);border-radius:12px;background:var(--paper);font-size:13px}
+.ext .st{display:inline-flex;align-items:center;gap:6px}
+.ext .btn{padding:8px 12px;font-size:13px}
+.ext .btn.sec{background:#fff;color:var(--accent);border:1px solid var(--accent)}
+.cnt{font-size:12px;font-weight:600;padding:3px 8px;border-radius:999px;background:var(--ok-soft);color:var(--ok)}
+.cnt.z{background:#eee9df;color:var(--muted)}.cnt.e{background:var(--warn-soft);color:var(--warn)}
+.src .q{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--muted);background:#f3ede2;padding:6px 8px;border-radius:7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media (max-width:480px){header{padding:20px 14px 10px}main{padding:0 14px 40px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><div class="logo">A</div><div><h1>Archivéo</h1><p class="tag">Où sont les archives en ligne ? Un seul endroit pour le savoir.</p></div></div>
+  <div class="hero">
+    <h2>528 services d'archives et associations, un seul annuaire.</h2>
+    <p>Départementales, nationales et militaires, municipales, cercles généalogiques, entreprises, cultes, hôpitaux : ce qui est numérisé, pour quelle période, et le lien direct.</p>
+  </div>
+  <div class="modes">
+    <button class="mode on" data-m="annuaire">Annuaire</button>
+    <button class="mode" data-m="qui">Qui peut me répondre ?</button>
+  </div>
+  <section id="pane-qui" hidden>
+    <form class="qform" id="qform">
+      <input id="f-nom" type="search" placeholder="Nom de famille" required autocomplete="off">
+      <input id="f-prenom" type="search" placeholder="Prénom (facultatif)" autocomplete="off">
+      <input id="f-annee" type="number" min="1500" max="2026" placeholder="Année de naissance approx." autocomplete="off">
+      <input id="f-lieu" type="search" placeholder="Lieu ou département" autocomplete="off">
+      <button class="go" type="submit">Qui peut répondre ?</button>
+    </form>
+    <p class="hint">Le site croise votre recherche avec l'annuaire : il distingue les bases qui répondent directement par nom (lien pré-rempli) des registres à feuilleter dans le bon département, et n'affiche que les fonds qui couvrent la période de vie estimée.</p>
+    <div class="ext" id="ext">
+      <span class="st"><i class="dot no" id="ext-dot"></i><span id="ext-txt">Extension Archivéo non détectée</span></span>
+      <span id="ext-dl" style="color:var(--muted)">— installez l'extension (fichier archiveo-extension.zip fourni) pour compter les résultats</span>
+      <button class="btn" id="ext-go" type="button" hidden>Compter les résultats</button>
+      <span id="ext-prog" style="color:var(--muted)"></span>
+    </div>
+    <div class="stats" id="qstats"></div>
+    <div class="grid" id="qgrid"></div>
+  </section>
+  <section id="pane-annuaire">
+  <div class="search"><input id="q" type="search" placeholder="Département, ville, région, organisme, type de fonds… (ex. Moselle, Lyon, mineurs, Geneabank)" autocomplete="off"></div>
+  <div class="cats" id="cats"></div>
+  <div class="chips" id="chips"></div>
+  <div class="legend">
+    <span><i class="dot ok"></i>En ligne</span><span><i class="dot warn"></i>Partiel / période non précisée</span><span><i class="dot no"></i>Pas en ligne</span><span><span class="badge warn">à vérifier</span>lien ou contenu à confirmer</span>
+  </div>
+  </section>
+</header>
+<main>
+  <div class="stats" id="stats"></div>
+  <div class="grid" id="grid"></div>
+  <button class="more" id="more" hidden>Afficher plus</button>
+</main>
+<footer>Données collectées le 4 nov. 2026 (data.gouv.fr, Geneanet, FranceArchives, annuaires spécialisés, sites des services). Les lignes « à vérifier » attendent un contrôle manuel. Prototype.</footer>
+<script src="data.js"></script>
+<script>
+const CATS=[["all","Tout"],["departementale","Départementales"],["nationale","Nationales & guerres"],["municipale","Municipales & régionales"],["association","Associations"],["privee","Entreprises & privées"],["fav","★ Favoris"]];
+const FONDS=["État civil","Tables décennales","Recensements","Registres matricules","Cadastre","Notariat","Successions","Presse"];
+let cat="all", fond=null, nomOnly=false, limit=60;
+let favs=new Set(); try{favs=new Set(JSON.parse(localStorage.getItem("archiveo-favs")||"[]"))}catch(e){}
+const save=()=>{try{localStorage.setItem("archiveo-favs",JSON.stringify([...favs]))}catch(e){}};
+const norm=s=>(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+DATA.forEach((d,i)=>{d.id=i;d.hay=norm([d.num,d.nom,d.region,d.sub,d.territoire,d.type,d.site,d.desc,d.note,d.autres,d.acces,(d.fonds||[]).filter(f=>f[2]!=="no").map(f=>f[0]).join(" ")].join(" "))});
+
+const cats=document.getElementById("cats");
+CATS.forEach(([k,l])=>{const b=document.createElement("button");b.className="cat";b.dataset.k=k;
+  const n=k==="all"?DATA.length:k==="fav"?null:DATA.filter(d=>d.cat===k).length;
+  b.innerHTML=l+(n!==null?` <small>${n}</small>`:"");b.onclick=()=>{cat=k;limit=60;render()};cats.appendChild(b)});
+const chips=document.getElementById("chips");
+function mk(l,on){const b=document.createElement("button");b.className="chip";b.textContent=l;b.onclick=on;chips.appendChild(b);return b}
+FONDS.forEach(f=>mk(f,()=>{fond=fond===f?null:f;limit=60;render()}));
+mk("Recherche par nom possible",()=>{nomOnly=!nomOnly;limit=60;render()});
+const q=document.getElementById("q");q.addEventListener("input",()=>{limit=60;render()});
+document.getElementById("more").onclick=()=>{limit+=60;render()};
+
+function overall(d){const f=(d.fonds||[]).filter(x=>x[0]!=="Tables décennales");const ok=f.filter(x=>x[2]==="ok").length;
+  return ok>=5?["ok","Bien en ligne"]:ok>=2?["warn","Partiellement en ligne"]:["no","Peu en ligne"]}
+
+function render(){
+  [...cats.children].forEach(c=>c.classList.toggle("on",c.dataset.k===cat));
+  [...chips.children].forEach(c=>c.classList.toggle("on",c.textContent===fond||(c.textContent==="Recherche par nom possible"&&nomOnly)));
+  const needle=norm(q.value.trim());
+  let rows=DATA.filter(d=>{
+    if(cat==="fav"&&!favs.has(d.id))return false;
+    if(cat!=="all"&&cat!=="fav"&&d.cat!==cat)return false;
+    if(fond){ if(d.fonds){const f=d.fonds.find(x=>x[0]===fond); if(!f||f[2]==="no")return false} else if(!norm(d.desc).includes(norm(fond).replace("registres ","").replace("etat civil","civil")))return false }
+    if(nomOnly&&!(d.nominatif||"").startsWith("oui"))return false;
+    return !needle||d.hay.includes(needle);
+  });
+  const grid=document.getElementById("grid");grid.innerHTML="";
+  document.getElementById("stats").innerHTML=`<span><b>${rows.length}</b> service${rows.length>1?"s":""}</span><span><b>${rows.filter(d=>d.verif).length}</b> à vérifier</span>`;
+  if(!rows.length){grid.innerHTML=`<div class="empty">Aucun résultat.</div>`;document.getElementById("more").hidden=true;return}
+  rows.slice(0,limit).forEach(d=>{
+    const c=document.createElement("article");c.className="card";
+    let body="";
+    if(d.fonds){
+      const fs=fond?d.fonds.filter(f=>f[0]===fond).concat(d.fonds.filter(f=>f[0]!==fond)):d.fonds;
+      body=`<div class="fonds">${fs.map(f=>`<div class="fond"><div class="l"><i class="dot ${f[2]}"></i><span>${f[0]}</span></div><span class="per">${f[1]}</span></div>`).join("")}</div>`;
+      if(d.autres)body+=`<div class="note">Aussi : ${d.autres}</div>`;
+    }else{
+      body=`<p>${d.desc||""}</p>`;
+      if(d.note)body+=`<div class="note">${d.note}</div>`;
+      const m=[];if(d.acces)m.push(`<span class="badge g">${d.acces}</span>`);
+      if(d.nominatif)m.push(`<span class="badge ${d.nominatif.startsWith("oui")?"ok":"g"}">recherche par nom : ${d.nominatif}</span>`);
+      if(m.length)body+=`<div class="meta">${m.join("")}</div>`;
+    }
+    const sub=[d.num,d.sub||d.region,d.territoire&&d.territoire!==d.nom?d.territoire:"",d.type].filter(Boolean).join(" · ");
+    const [oc,ol]=d.fonds?overall(d):["",""];
+    c.innerHTML=`<div class="top"><div><div class="k">${sub}</div><h3>${d.nom}</h3><div class="site">${d.site||"—"}</div></div><button class="star ${favs.has(d.id)?"on":""}" title="Favori">★</button></div>
+      ${body}
+      <div class="foot"><span>${d.fonds?`<span class="badge ${oc}">${ol}</span>`:""}${d.verif?` <span class="badge warn">à vérifier</span>`:""}</span>
+      <a class="btn ${d.url?"":"off"}" href="${d.url||"#"}" target="_blank" rel="noopener">Ouvrir ↗</a></div>`;
+    c.querySelector(".star").onclick=()=>{favs.has(d.id)?favs.delete(d.id):favs.add(d.id);save();render()};
+    grid.appendChild(c);
+  });
+  document.getElementById("more").hidden=rows.length<=limit;
+}
+render();
+
+/* ---------- Mode ---------- */
+document.querySelectorAll(".mode").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll(".mode").forEach(x=>x.classList.toggle("on",x===b));
+  document.getElementById("pane-qui").hidden=b.dataset.m!=="qui";
+  document.getElementById("pane-annuaire").hidden=b.dataset.m!=="annuaire";
+  document.querySelector("main").hidden=b.dataset.m!=="annuaire";
+});
+
+/* ---------- Extension (comptage dans le navigateur de l'utilisateur) ---------- */
+let extOk=false, derniereRecherche=null, rechercheId=0;
+const SANS_REQUETE=["Mémoire des Hommes","Mémorial de la Shoah","Geneabank","MémorialGenWeb"]; // page d'accueil seulement : rien à compter
+function extEtat(ok,v){extOk=ok;document.getElementById("ext-dot").className="dot "+(ok?"ok":"no");
+  document.getElementById("ext-txt").textContent=ok?`Extension Archivéo détectée (v${v})`:"Extension Archivéo non détectée";
+  document.getElementById("ext-dl").hidden=ok;document.getElementById("ext-go").hidden=!ok;}
+window.addEventListener("message",ev=>{
+  const m=ev.data; if(!m||!m.archiveo) return;
+  if(m.type==="ready") extEtat(true,m.version);
+  if(m.type==="result"&&m.id===rechercheId){
+    const c=[...document.querySelectorAll("#qgrid .card")].find(x=>x.dataset.nom===m.nom); if(!c) return;
+    const slot=c.querySelector(".cntslot");
+    slot.innerHTML=m.count===null?`<span class="cnt e" title="${m.status}">${m.status}</span>`:`<span class="cnt ${m.count?"":"z"}">${m.count.toLocaleString("fr-FR")} résultat${m.count>1?"s":""}</span>`;
+    const p=document.getElementById("ext-prog"); p.dataset.n=(+p.dataset.n||0)+1; p.textContent=`${p.dataset.n}/${p.dataset.t} sources lues…`;
+  }
+  if(m.type==="done"&&m.id===rechercheId){document.getElementById("ext-prog").textContent=`Terminé : ${m.total} sources lues.`;document.getElementById("ext-go").disabled=false;}
+});
+setTimeout(()=>window.postMessage({archiveo:true,type:"ping"},"*"),800);
+document.getElementById("ext-go").onclick=()=>{
+  if(!extOk||!derniereRecherche) return;
+  const sources=[...document.querySelectorAll("#qgrid .card")].filter(c=>c.querySelector(".dot.ok")&&!SANS_REQUETE.some(s=>c.dataset.nom.startsWith(s))).map(c=>({nom:c.dataset.nom,url:c.dataset.url}));
+  rechercheId++; const p=document.getElementById("ext-prog"); p.dataset.n=0; p.dataset.t=sources.length; p.textContent=`Ouverture de ${sources.length} sources en arrière-plan…`;
+  document.querySelectorAll("#qgrid .cntslot").forEach(x=>x.innerHTML="");
+  document.getElementById("ext-go").disabled=true;
+  window.postMessage({archiveo:true,type:"search",id:rechercheId,sources},"*");
+};
+
+/* ---------- Qui peut me répondre ? ---------- */
+const e=encodeURIComponent;
+// Sources nominatives : [nom, description, période de vie couverte [min,max] (année de naissance), url builder, note]
+const NOMINATIVES=[
+ ["Geneanet","Arbres, relevés d'associations, matricules, cimetières, presse indexée",[1500,2026],(n,p,l)=>`https://www.geneanet.org/fonds/individus/?go=1&nom=${e(n)}&prenom=${e(p)}&place__0__=${e(l)}`,"gratuit / Premium"],
+ ["FamilySearch","Images et index de registres paroissiaux et d'état civil",[1500,1950],(n,p,l)=>`https://www.familysearch.org/search/record/results?q.surname=${e(n)}&q.givenName=${e(p)}&q.anyPlace=${e(l)}`,"gratuit (compte)"],
+ ["Filae","Indexation de l'état civil XIXe (naissances, mariages, décès), recensements, matricules",[1780,1920],(n,p)=>`https://www.filae.com/recherche/?nom=${e(n)}&prenom=${e(p)}`,"payant"],
+ ["Grand Mémorial","Registres matricules 14-18 indexés + Morts pour la France",[1867,1900],(n,p)=>`https://francearchives.gouv.fr/fr/grand-memorial?q=${e((p+" "+n).trim())}`,"gratuit · nés 1867-1900 (classes 1887-1920)"],
+ ["Mémoire des Hommes","Morts pour la France 14-18, 39-45, Indochine, AFN, sépultures",[1860,1945],()=>`https://www.memoiredeshommes.sga.defense.gouv.fr/`,"gratuit · recherche sur le site"],
+ ["MémorialGenWeb","Monuments aux morts, relevés bénévoles tous conflits",[1840,1960],()=>`https://www.memorialgenweb.org/`,"gratuit · recherche sur le site"],
+ ["Base Léonore","Dossiers de Légion d'honneur (décédés avant 1977). Le site ne prend pas le nom dans l'adresse : tapez-le dans la barre de recherche en haut (l'extension le fait pour vous).",[1750,1920],(n)=>`https://www.leonore.archives-nationales.culture.gouv.fr/ui/?q=${e(n)}`,"gratuit · nom à saisir sur place"],
+ ["FranceArchives","Noms dans les inventaires de 80 services d'archives (notaires, justice, administration)",[1500,1990],(n,p,l)=>`https://francearchives.gouv.fr/fr/search?q=${e([p,n,l].filter(Boolean).join(" "))}`,"gratuit"],
+ ["Arolsen Archives","Déportés, travailleurs forcés, personnes déplacées 1933-1950",[1860,1945],(n,p)=>`https://collections.arolsen-archives.org/fr/search?s=${e((p+" "+n).trim())}`,"gratuit"],
+ ["Mémorial de la Shoah","Déportés juifs de France (convois)",[1860,1945],()=>`https://ressources.memorialdelashoah.org/`,"gratuit · recherche sur le site"],
+ ["Fichier des décès INSEE (matchID)","Décès depuis 1970 avec date et lieu de naissance",[1870,2026],(n,p)=>`https://deces.matchid.io/search?q=${e((p+" "+n).trim())}`,"gratuit"],
+ ["Gallica (presse, annuaires, JO)","Presse ancienne, annuaires, Journal officiel (naturalisations, décorations)",[1750,1950],(n,p)=>`https://gallica.bnf.fr/services/engine/search/sru?operation=searchRetrieve&version=1.2&query=text%20all%20%22${e((p+" "+n).trim())}%22`,"gratuit"],
+ ["RetroNews","Presse 1631-1954 : avis de décès, faits divers",[1750,1950],(n,p)=>`https://www.retronews.fr/search#allTerms=${e((p+" "+n).trim())}`,"gratuit / Premium"],
+ ["Geneabank","Relevés d'actes de 103 associations (présence gratuite, détail adhérents)",[1550,1920],()=>`https://www.geneabank.org/frenind.php`,"indication gratuite"],
+];
+// Fonds à feuilleter : période des documents [min,max], explication
+const FONDS_PERIODE={
+ "État civil":[1500,1950,"Registres paroissiaux avant 1792 puis état civil : l'acte lui-même (naissance, mariage, décès)."],
+ "Tables décennales":[1793,1950,"Index par nom tous les 10 ans : pour trouver la date exacte avant d'ouvrir le registre."],
+ "Recensements":[1836,1936,"Composition du foyer tous les 5 ans : âge, profession, lieu de naissance."],
+ "Registres matricules":[1867,1940,"Fiche militaire de chaque homme à 20 ans : signalement, parcours, domiciles successifs."],
+ "Cadastre":[1807,1850,"Cadastre napoléonien : propriétés et maisons de la famille."],
+ "Notariat":[1500,1920,"Contrats de mariage, testaments, inventaires après décès."],
+ "Successions":[1791,1950,"Tables des successions et absences : repère tout décès laissant des biens."],
+ "Presse":[1800,1950,"Presse locale : avis, faits divers, nominations."],
+};
+function periode(an){ return an?[an, an+90]:[1500,2026]; }
+function chevauche(a,b){ return a[0]<=b[1] && b[0]<=a[1]; }
+function trouveDep(l){
+  const q=norm(l); if(!q) return [];
+  const deps=DATA.filter(d=>d.cat==="departementale");
+  let hit=deps.filter(d=>norm(d.num)===q||norm(d.nom)===q);
+  if(!hit.length) hit=deps.filter(d=>norm(d.nom).includes(q)||norm(d.sub).includes(q)||norm(d.region).includes(q));
+  if(!hit.length){ // ville → via archives municipales
+    const nums=new Set(DATA.filter(d=>d.cat==="municipale"&&(norm(d.territoire).includes(q)||norm(d.nom).includes(q))).map(d=>d.num.split("/")[0]));
+    hit=deps.filter(d=>nums.has(d.num));
+  }
+  return hit;
+}
+function card(title,k,desc,why,url,warn,extra){
+  const c=document.createElement("article");c.className="card";c.dataset.nom=title;c.dataset.url=url;
+  c.innerHTML=`<div class="top"><div><div class="k">${k}</div><h3>${title}</h3></div><i class="dot ${warn?"warn":"ok"}"></i></div>
+   ${desc?`<p>${desc}</p>`:""}${extra||""}<div class="why ${warn?"w":""}">${why}</div>
+   <div class="foot"><span class="cntslot"></span><a class="btn" href="${url}" target="_blank" rel="noopener">${warn?"Feuilleter":"Chercher"} ↗</a></div>`;
+  return c;
+}
+document.getElementById("qform").addEventListener("submit",ev=>{
+  ev.preventDefault();
+  const n=document.getElementById("f-nom").value.trim(), p=document.getElementById("f-prenom").value.trim();
+  const an=parseInt(document.getElementById("f-annee").value)||0, l=document.getElementById("f-lieu").value.trim();
+  const vie=periode(an); const g=document.getElementById("qgrid"); g.innerHTML="";
+  const deps=trouveDep(l); let nb=0;
+  const H=(t,s)=>{const h=document.createElement("div");h.className="grp";h.innerHTML=t+(s?`<small>${s}</small>`:"");g.appendChild(h)};
+
+  // 1. Bases nominatives
+  const nom=NOMINATIVES.filter(s=>chevauche(vie,s[2]));
+  H("Répondent directement à un nom",`${nom.length} base${nom.length>1?"s":""} · résultat immédiat`);
+  nom.forEach(s=>{ nb++; const why=an?`Couvre les personnes nées entre ${s[2][0]} et ${s[2][1]} — votre recherche (vers ${an}) est dans la fenêtre.`:"Recherche par nom possible ; précisez une année pour affiner.";
+    g.appendChild(card(s[0],s[4],s[1],why,s[3](n,p,l),false)); });
+
+  // 2. Archives du lieu
+  if(deps.length){
+    deps.forEach(d=>{
+      const fs=d.fonds.filter(f=>f[2]!=="no"&&chevauche(vie,FONDS_PERIODE[f[0]].slice(0,2)));
+      if(!fs.length) return;
+      H(`À feuilleter — Archives départementales ${d.nom} (${d.num})`,"images non indexées : il faut la commune et une date approximative");
+      fs.forEach(f=>{ nb++; const P=FONDS_PERIODE[f[0]];
+        g.appendChild(card(f[0],`${d.site} · ${f[1]}`,P[2],an?`Documents ${P[0]}-${P[1]} ; une personne née vers ${an} peut y figurer entre ${Math.max(an,P[0])} et ${Math.min(an+90,P[1])}.`:`Documents ${P[0]}-${P[1]}.`,d.url,true)); });
+      // municipales du département
+      const mun=DATA.filter(m=>m.cat==="municipale"&&m.num.split("/").includes(d.num)&&(!l||norm(m.territoire+" "+m.nom).includes(norm(l))||norm(l)===norm(d.nom)||norm(l)===norm(d.num)));
+      if(mun.length){ H(`Archives municipales (${d.nom})`,"souvent l'état civil des grandes villes n'est que là");
+        mun.slice(0,8).forEach(m=>{ nb++; g.appendChild(card(m.nom,m.type,m.desc,m.note||"Compléments locaux : recensements, listes électorales, cimetières, photos.",m.url,true)); }); }
+      // associations du département
+      const ass=DATA.filter(a=>a.cat==="association"&&(a.num||"").split(/[\/ +]/).includes(d.num));
+      if(ass.length){ H(`Relevés d'associations (${d.nom})`,"recherche par nom, le plus souvent réservée aux adhérents");
+        ass.forEach(a=>{ nb++; g.appendChild(card(a.nom,a.acces,a.desc,"Les bénévoles ont dépouillé les registres : une recherche par nom y aboutit en quelques secondes, là où les images ne le permettent pas.",a.url,!(a.nominatif||"").startsWith("oui"))); }); }
+    });
+  } else if(l){
+    H("Lieu non reconnu",`« ${l} » ne correspond à aucun département, région ou ville de l'annuaire — essayez le nom ou le numéro du département.`);
+  } else {
+    H("Ajoutez un lieu","pour que le site vous indique les registres départementaux, municipaux et associatifs à feuilleter.");
+  }
+  derniereRecherche={n,p,an,l};
+  document.getElementById("ext-prog").textContent="";
+  document.getElementById("qstats").innerHTML=`<span><b>${nb}</b> pistes pour <b>${p?p+" ":""}${n}</b>${an?" · né(e) vers "+an:""}${deps.length?" · "+deps.map(d=>d.nom).join(", "):""}</span>`;
+  g.scrollIntoView({behavior:"smooth",block:"start"});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+nom;departement;territoire;url;contenu_en_ligne;acces;recherche_nominative;source
+GeneaBank (association GeneaBank);national;France entière (103 associations participantes);https://www.geneabank.org/frenind.php;Plateforme d'échange de relevés BMS/état civil de 103 associations, recherche par couple gratuite (indication de présence), détail des actes contre points distribués par les associations à leurs adhérents, carte de France des relevés et liste des communes dépouillées;adhérents;oui;geneabank.org (fetch)
+Bigenet (FFG) - FERMÉ;national;France (58 sites associatifs hébergés);https://www.bigenet.org;Ancienne base fédérale de 70 M de relevés, service arrêté le 23/01/2019, bases restituées aux associations (reversées sur Geneanet/Filae/Geneabank selon associations), domaine aujourd'hui détourné;fermé;non;RFG 02/11/2018 (fetch)
+Fédération Française de Généalogie (FFG);national;France;https://www.genefede.eu;Annuaire des associations adhérentes, bulletin Flash en PDF, pas de base d'actes propre depuis la fin de Bigenet;libre;non;genefede.eu (à vérifier)
+FranceGenWeb (association);national;France;https://www.francegenweb.org;Portail bénévole : MémorialGenWeb (monuments aux morts, 2,5 M de noms), Actes en Vrac, Notaires GenWeb, Mairies, Cimetières, listes de projets départementaux;libre;oui;(à vérifier)
+MémorialGenWeb (FranceGenWeb);national;France et colonies;https://www.memorialgenweb.org;Relevés des monuments aux morts, plaques, nécropoles, fiches individuelles de soldats, recherche par nom et commune;libre;oui;(à vérifier)
+Le Fil d'Ariane - Entraide généalogique sur Internet;national;France, Belgique, Luxembourg, Québec;https://www.entraide-genealogique.net;Service d'entraide : bénévoles qui photographient ou transcrivent des actes d'état civil ou notariés non en ligne, aide paléographie, identification d'uniformes, sur création de compte;libre;non (demande au cas par cas);site (fetch)
+Geneawiki (Geneanet, projet collaboratif);national;France;https://fr.geneawiki.com;Encyclopédie collaborative : fiches par association, « Annuaire des relevés collaboratifs libres et gratuits », annuaire des dépouillements de registres par département;libre;non;(à vérifier)
+Bibliothèque Généalogique et d'Histoire Sociale (BGHS);75;Paris, fonds nationaux (01, 13, 15, 21, 25, 31, 34, 49, 50, 72, 75, 89, 95 sur Geneabank);https://www.bibgen.org;Bibliothèque de généalogie, relevés multi-départements sur Geneabank, fichiers et catalogues en ligne;adhérents;oui (Geneabank);Geneabank (à vérifier)
+La France Généalogique (CEGF);75;Paris, national;https://www.cegf.org;Relevés Geneabank, bibliothèque, base de données de la revue, fichiers de membres;adhérents;oui (Geneabank);Geneabank liste
+Le Centre de Généalogie;75;Paris;https://www.geneabank.org/gensocs/indexfr.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Association Parisienne de Généalogie Normande (APGN);75;Paris, Normandie;https://www.apgn.org;Relevés normands sur Geneabank, revue;adhérents;oui;Geneabank liste (à vérifier)
+Cercle Généalogique de Versailles et des Yvelines (CGVY);78;Yvelines;https://www.cgvy.org;Base de relevés BMS/état civil des Yvelines, Geneabank, bibliothèque;adhérents;oui;Geneabank + RFG (à vérifier)
+Association Généalogique et Historique des Yvelines Nord (AGHYN);78;Yvelines nord;https://www.aghyn.org;Relevés sur Geneabank, dépouillements vallée de Seine;adhérents;oui;Geneabank liste
+Généalogie 92 (Cercle généalogique des Hauts-de-Seine);92;Hauts-de-Seine;https://www.geneabank.org/gensocs/cgc.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Entente Généalogique de l'Arrondissement Nord des Hauts-de-Seine (EGAN92);92;Hauts-de-Seine nord;https://www.geneabank.org/gensocs/egan92.html;Relevés sur Geneabank (92 et 56);adhérents;oui;Geneabank liste
+Société d'Histoire de Nanterre;92;Nanterre;https://www.histoire-nanterre.org;Relevés nanterriens sur Geneabank, publications d'histoire locale;adhérents;oui;Geneabank liste (à vérifier)
+Club 92 CMCAS (EDF-GDF, section généalogie);92;Hauts-de-Seine, cercle d'entreprise;https://www.rfgenealogie.com/annuaire/associations;Section généalogie d'entreprise EDF-GDF, offre en ligne non confirmée;sur place (à vérifier);non;RFG annuaire
+Cercle de Généalogie et d'Histoire de la Seine-Saint-Denis (ex CG Est Parisien);93;Seine-Saint-Denis, Val-de-Marne, Paris;https://caids.geneabank.org/form/cgep93/;Relevés sur Geneabank (93, 94, 75, 56);adhérents;oui;Geneabank liste
+Amicale des Bretons de Saint-Denis (ABSD93);93;Saint-Denis;https://caids.geneabank.org/form/absd93.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique de Maisons-Alfort (CGMA);94;Val-de-Marne;https://www.cgma.fr;Relevés sur Geneabank, dépouillements Maisons-Alfort et environs;adhérents;oui;Geneabank liste (à vérifier)
+Association de Recherches Généalogiques et Historiques d'Argenteuil (AREGHA);95;Argenteuil;https://www.geneabank.org/gensocs/aregha.html;Relevés d'Argenteuil sur Geneabank (1 416 actes affichés);adhérents;oui;Geneabank (fetch)
+Généalogie Valdoisienne;95;Val-d'Oise;https://www.geneabank.org/gensocs/gv.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Association Généalogique de Taverny (AGT);95;Taverny;https://caids.geneabank.org/form/agt.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Entraide Généalogique Cormeillaise;95;Cormeilles-en-Parisis;https://caids.geneabank.org/form/egcormeillaise.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique de la Brie (CGBrie);77;Seine-et-Marne, Oise, Val-d'Oise;https://www.cgbrie.org;Relevés sur Geneabank (8 716 actes affichés), base de relevés briards;adhérents;oui;Geneabank (fetch)
+Association Généalogique de Brie-Comte-Robert (AGBCR);77;Brie-Comte-Robert;https://caids.geneabank.org/form/agbcr.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Atelier Généalogique de la MAL de Tournan-en-Brie;77;Tournan-en-Brie;https://caids.geneabank.org/form/agmalt.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Club de Généalogie d'Orsay;91;Essonne;https://www.rfgenealogie.com/annuaire/associations;Offre en ligne non confirmée (relevés locaux);à vérifier;à vérifier;RFG annuaire
+Le Loiret Généalogique (ex Généalogie 45);45;Loiret;https://www.loiret-genealogique.org;Relevés BMS/état civil du Loiret sur Geneabank (26 982 actes affichés), partenaire Filae et Geneanet (relevés indexés), bibliothèque et fonds à Fleury-les-Aubrais, fonds privés/bibliothèque en ligne non confirmés;adhérents;oui (Geneabank);Geneabank + Filae (fetch), site (à vérifier)
+Gâtinais Généalogique;45/77;Montargis, Gâtinais;https://www.gatinais-genealogique.org;Relevés sur Geneabank (45 et 77), partenaire Filae;adhérents;oui;Geneabank + Filae (fetch)
+Gien Généalogie;45;Giennois;https://www.rfgenealogie.com/annuaire/associations;Relevés locaux, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Société Généalogique d'Eure-et-Loir (SGEL);28;Eure-et-Loir;https://www.sgel28.org;Relevés sur Geneabank (1 670 actes affichés), base de relevés propre;adhérents;oui;Geneabank (fetch) (à vérifier)
+Cercle de Recherches Généalogiques du Perche-Gouët (CRGPG);28/41/61/72;Perche-Gouët;https://www.perche-gouet.net;Base de relevés en ligne (moteur propre + Geneabank), monographies communales, dictionnaire des patronymes;adhérents (partie libre);oui;Geneabank liste (à vérifier)
+Cercle Généalogique de Loir-et-Cher (CGLC);41;Loir-et-Cher;https://www.cglc41.fr;Base de relevés du Loir-et-Cher, dépouillements notariés;adhérents (à vérifier);oui;RFG annuaire (à vérifier)
+Centre Généalogique de Touraine (CGT);37;Indre-et-Loire;https://www.tourainegenealogie.org;Base de relevés (ex Bigenet), fonds de notaires indexés, indexation collaborative des recensements avec les AD37;adhérents;oui;RFG (à vérifier)
+Cercle Généalogique du Haut-Berry (CGHB);18;Cher, Bourbonnais;https://www.cghb.fr;Base de relevés du Cher (millions d'actes), publications, extension au Bourbonnais;adhérents;oui;RFG annuaire (à vérifier)
+Société Généalogique du Bas-Berry (SGBB);36;Indre;https://www.genebasberry.org/actes/;Base ExpoActes de près de 1,8 M d'actes relevés (Indre), aussi sur Filae/Geneanet premium;adhérents;oui;RFG (fetch)
+Centre Généalogique de Vierzon;18;Vierzon;https://caids.geneabank.org/form/cgvz.html;Relevés sur Geneabank (12 405 actes affichés);adhérents;oui;Geneabank (fetch)
+Cercle Généalogique de l'Eure;27;Eure;https://www.cgeure.fr;Base de relevés de l'Eure (ex Bigenet), tables;adhérents;oui;RFG annuaire (à vérifier)
+Cercle Généalogique Rouen et Seine-Maritime (CGRSM);76;Seine-Maritime;https://www.cgrsm.org;Relevés sur Geneabank, base propre;adhérents;oui;Geneabank liste (à vérifier)
+Cercle Généalogique du Pays de Caux - Seine-Maritime (GeneaCaux);76;Pays de Caux;https://www.geneacaux.fr;Relevés ExpoActes « plus de 4 millions d'actes », photos anciennes de mariages par canton, liste de marins décédés loin de chez eux 1691-1997;adhérents;oui;site (fetch)
+Groupement Généalogique du Havre et de Seine-Maritime (GGHSM);76;Le Havre;https://www.gghsm.fr;Base de relevés havrais et cauchois;adhérents (à vérifier);oui;RFG annuaire (à vérifier)
+Association Généalogique du Pays de Bray (AGPB);60/76;Pays de Bray;https://www.agpb.fr;Relevés sur Geneabank;adhérents;oui;Geneabank liste (à vérifier)
+Cercle Généalogique du Calvados (CEGECAL);14;Calvados;https://www.cegecal.org;Relevés sur Geneabank (23 217 actes affichés), base propre;adhérents;oui;Geneabank (fetch)
+Cercle Généalogique de la Manche;50;Manche;https://www.cg50.fr;Base de relevés de la Manche, dépouillements;adhérents (à vérifier);oui;RFG annuaire (à vérifier)
+Généa50;50;Manche;https://www.genea50.fr;Relevés et base manchoise;à vérifier;oui;RFG annuaire (à vérifier)
+Centre Généalogique de l'Orne et du Perche (CGOP);61;Orne;https://www.orne-perche.org;Base de relevés en ligne (moteur propre) + Geneabank;adhérents;oui;Geneabank liste
+Association Racines de l'Orne (AGR Orne);61;Orne;https://caids.geneabank.org/form/agrorne.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Entraide Généalogique Bretagne Maine Normandie (EGBMN);14/50/53/61;Bretagne-Maine-Normandie;https://www.egbmn.net;Relevés sur Geneabank via formulaire propre (14, 50, 53, 61);adhérents;oui;Geneabank liste
+Cercle Généalogique de Maine et Perche;53/61/72;Maine et Perche;https://www.maine-et-perche-genealogie.org;Base de relevés en ligne (moteur propre) + Geneabank;adhérents;oui;Geneabank liste
+Centre Généalogique de Loire-Atlantique (ex CGO);44;Loire-Atlantique;https://www.cgla44.fr;Base de relevés de Loire-Atlantique, Geneabank;adhérents;oui;Geneabank liste (à vérifier)
+Association Généalogique Vertavienne (AGV);44;Vertou;https://caids.geneabank.org/form/agv44.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Association Brevinoise de Généalogie;44;Saint-Brevin;https://caids.geneabank.org/form/brevin.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Entraide Généalogique Herbignacaise;44/56;Herbignac;https://caids.geneabank.org/form/egherbignac.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Histoire et Généalogie du Grand-Fougeray;44;Grand-Fougeray;https://caids.geneabank.org/form/fougeray.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Mémoire Vivante de Fégréac;35/44/56;Fégréac;https://caids.geneabank.org/form/mvfeg.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Association Généalogique de l'Anjou (A.Gen.A);49;Maine-et-Loire;https://www.agena49.fr;Base de relevés angevins (ex Bigenet);adhérents (à vérifier);oui;RFG annuaire (à vérifier)
+Cercle Généalogique Vendéen (CGV);85;Vendée;https://www.cgv85.fr;Relevés via Filiacta et Geneabank, Geneanet en salle de lecture;adhérents;oui;site (fetch)
+Centre Généalogique du Finistère (CGF);29;Finistère;https://www.cgf.bzh;Base RECIF 11,9 M d'actes relevés, 432 000 chaînons, 660 000 photos de registres BMS/état civil, bases BAGAD, HORSEC, sabotiers, expédition Lapérouse;adhérents;oui;site (fetch)
+Centre Généalogique des Côtes-d'Armor (CG22);22;Côtes-d'Armor;https://www.genealogie22.com;Base de relevés costarmoricains + Geneabank;adhérents;oui;Geneabank liste (à vérifier)
+Cercle Généalogique d'Ille-et-Vilaine (CGIV35);35;Ille-et-Vilaine;https://www.cgiv35.fr;Relevés sur Geneabank (233 024 actes affichés), base propre;adhérents;oui;Geneabank (fetch)
+Cercle Généalogique Bretagne Côte d'Émeraude (CGCE35);35;Saint-Malo;https://caids.geneabank.org/form/cgce35.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique du Pays de Fougères;35/50;Fougères;https://caids.geneabank.org/form/cgpf35/;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique du Pays d'Oust et de Vilaine (CGPOV);35;Redon;https://caids.geneabank.org/form/cgpov35.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique et Historique du Poher (CGHP);22/29/56;Carhaix, Poher;https://www.cgh-poher.com;Relevés sur Geneabank, formulaire propre;adhérents;oui;Geneabank liste
+Cercle Généalogique et Historique de l'Est Vannetais (CEGHEV);56;Vannes est;https://caids.geneabank.org/form/ceghev56.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique Sud Bretagne Morbihan (CGSB);56;Morbihan;https://www.cgsb.fr;Base de relevés du Morbihan;adhérents (à vérifier);oui;RFG annuaire (à vérifier)
+Cercle Généalogique Centre-Est Bretagne (CEGENCEB);22/35/56;Centre Bretagne;https://www.cegenceb.fr;Relevés et base propre;à vérifier;oui;RFG annuaire (à vérifier)
+Groupement Généalogique de la Région du Nord (GGRN);59;Nord, Lille;https://www.ggrn.fr;Base de relevés du Nord (ex Bigenet), bibliothèque à Wambrechies, adhésion HelloAsso;adhérents;oui;(à vérifier)
+GenNPdC - Association généalogique;59/62;Nord - Pas-de-Calais;https://www.gennpdc.net;Forum d'entraide (753 000 messages), base collaborative de relevés et de patronymes, gratuit sur inscription;libre (inscription);oui;site (fetch)
+Généalo 59-62-02-Belgique (Projet Genealo);59/62/02/80 + Belgique;Nord, Pas-de-Calais, Aisne, Somme, Belgique;https://www.genealo.net;Bases Mariages, GenealoCensus (recensements), GenealoMatricules, Actes Genealo, Base Ancêtres, index libres, détail réservé;adhérents (index libres);oui;site (fetch)
+Centre de Recherche Généalogique Flandre-Artois (CRGFA);59;Bailleul, Flandre;https://www.crgfa.org;Base MOULIN et Base CRGFA (patronymes, individus, familles, communes), recherches notariés/justice/Belgique en espace membre, fonds DUMONT et GERNEZ (consultation à Bailleul);adhérents (partie libre);oui;site (fetch)
+Association Généalogique Flandre-Hainaut (AGFH);59;Valenciennes;https://www.agfh.fr;Base de relevés du Hainaut (site en maintenance);adhérents (à vérifier);oui;RFG annuaire (site en maintenance)
+Groupe des Généalogistes Amateurs du Cambrésis (GGAC);59/62/02;Cambrésis;https://www.ggac.fr;Relevés du Cambrésis;à vérifier;oui;RFG annuaire (à vérifier)
+Cercle Généalogique de Picardie;80;Somme, Picardie;https://www.cgpicardie.fr;Base de relevés picards (ex Bigenet);adhérents (à vérifier);oui;RFG annuaire (à vérifier)
+Généalogie Aisne;02;Aisne;https://www.geneaisne.org;Relevés sur Geneabank, base propre;adhérents;oui;Geneabank liste (à vérifier)
+Cercle Généalogique de l'Oise et de Senlis (CGOS);60;Oise;https://caids.geneabank.org/form/cgos.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique de l'Aube;10;Aube;https://aubegenealogie-v2.hidora.com;Base de relevés en ligne (nouveau fonctionnement du site), publications;adhérents (à vérifier);oui;(à vérifier)
+Cercle Généalogique de la Marne;51;Marne;https://www.rfgenealogie.com/annuaire/associations;Relevés marnais, offre en ligne non confirmée;à vérifier;à vérifier;(à vérifier)
+Centre Généalogique de Haute-Marne;52;Haute-Marne;https://www.rfgenealogie.com/annuaire/associations;Relevés haut-marnais, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Union des Cercles Généalogiques Lorrains (UCGL);54/55/57/88;Lorraine;https://www.ucgl.fr;Base régionale de relevés lorrains mutualisée des cercles membres, bibliothèque à Nancy;adhérents;oui;(à vérifier)
+Cercle Généalogique de Nancy;54;Nancy;https://www.rfgenealogie.com/annuaire/associations;Relevés versés à la base UCGL;adhérents;oui;RFG annuaire (à vérifier)
+Cercle Généalogique du Pays Messin;57;Metz;https://www.rfgenealogie.com/annuaire/associations;Relevés versés à la base UCGL;adhérents;oui;RFG annuaire (à vérifier)
+Cercle Généalogique de la Meuse;55;Meuse;https://www.rfgenealogie.com/annuaire/associations;Relevés meusiens, base UCGL;adhérents;oui;RFG annuaire (à vérifier)
+Cercle Généalogique de Saint-Dié et sa région;88;Vosges;https://www.rfgenealogie.com/annuaire/associations;Relevés vosgiens, base UCGL;adhérents;oui;RFG annuaire (à vérifier)
+Association Généalogique de Hambach - Pays de Sarreguemines (AGEM57);57;Sarreguemines;https://caids.geneabank.org/form/agem57.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique d'Alsace (CGA);67/68;Alsace;https://www.alsace-genealogie.com;Recherche globale par nom dans les bases et publications, dépouillement de Strasbourg, fonds iconographique « Portraits d'Alsace », abonnement 24 h possible, bibliothèque à Strasbourg;adhérents ou abonnement 24 h;oui;site (fetch)
+Centre de Recherches sur l'Histoire des Familles (CRHF, ex CDHF Guebwiller);68;Haut-Rhin, Alsace;https://www.crhf.net;Centre de documentation à Guebwiller avec bases en ligne (relevés, optants 1872, généalogies déposées), guide du site en PDF;adhérents (partie libre);oui;(à vérifier)
+Cercle Généalogique de Mulhouse;68;Mulhouse;https://www.rfgenealogie.com/annuaire/associations;Relevés mulhousiens, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Cercle Généalogique de Schirrheim-Schirrhoffen (CGSS67);67;Schirrheim;https://caids.geneabank.org/form/cgss67.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Centre d'Entraide Généalogique de Franche-Comté (CEGFC);25/39/70/90;Franche-Comté;https://www.cegfc.net;Base de relevés comtois (moteur propre + Geneabank), sections locales, bibliothèque à Besançon;adhérents;oui;Geneabank liste
+Généalogie Val-de-Gray;70;Haute-Saône;https://www.rfgenealogie.com/annuaire/associations;Relevés locaux, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Cercle Généalogique de la Côte-d'Or (CGCO);21;Côte-d'Or (+10, 58, 89);https://cgco-actes.hidora.com;Base de relevés en ligne (tables de bans, recensements, actes) + Geneabank;adhérents (partie libre à vérifier);oui;Geneabank
+Société Généalogique de l'Yonne (SGY);89;Yonne;https://www.sgyonne.org;Base de données de relevés, actes et index patronymiques;adhérents (à vérifier);oui;site (fetch)
+Cercle Généalogique et Historique du Nivernais-Morvan (CGHNM);58;Nièvre, Morvan;https://www.cghnm.fr;Relevés sur Geneabank (58, 03, 18, 21, 71);adhérents;oui;Geneabank liste (à vérifier)
+La Géniale Généalogie 71;71;Saône-et-Loire;https://caids.geneabank.org/form/gg71.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique de Saône-et-Loire (CGSL);71;Saône-et-Loire;https://www.cgsl.fr;Base de relevés de Saône-et-Loire;adhérents (à vérifier);oui;RFG annuaire (à vérifier)
+Société Généalogique du Lyonnais et du Beaujolais (SGLB);69;Rhône;https://www.sglb.org;Relevés sur Geneabank, bases lyonnaises;adhérents;oui;Geneabank liste (à vérifier)
+Centre d'Études Généalogiques Rhône-Alpes (CEGRA);69;Rhône-Alpes;https://www.cegra.fr;Revue Généalogie & Histoire numérisée (accès abonnés, un numéro libre), documents : Rhônalpins à Marseille, galériens 1750-1793, bagnards nés à Lyon, rues et paroisses de Lyon en 1597;adhérents;partiel;site (fetch)
+Association Généalogique de la Loire (AGL);42;Loire, Haute-Loire, Ardèche (+01, 03, 63, 69);https://www.agl42.fr;Relevés sur Geneabank (82 947 + 56 605 actes affichés);adhérents;oui;Geneabank (fetch)
+Ceux du Roannais;42/69/71;Roannais;https://genea.ceuxduroannais.fr;Base de relevés en ligne (moteur propre) + Geneabank (22 750 actes affichés);adhérents;oui;Geneabank (fetch)
+Ain-Généalogie;01;Ain;https://www.ain-genealogie.fr;Relevés et dépouillements Bresse, Bugey, Dombes;adhérents (à vérifier);oui;site (fetch partiel)
+CousAin;01;Ain;https://caids.geneabank.org/form/cousain.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Centre Généalogique du Dauphiné (CGD);38;Isère, Drôme, Hautes-Alpes, Savoie;https://www.cgdauphine.net;Base GenEric de relevés dauphinois (accès via page Services) + Geneabank;adhérents;oui;site (fetch)
+Centre Généalogique de Vienne et de la Vallée du Rhône (CGVVR);38/26;Vienne;https://caids.geneabank.org/form/cgvvr38.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Centre Généalogique de Savoie (CGS);73/74;Savoie, Haute-Savoie;https://www.cgsavoie.org;Base de relevés savoyards + Geneabank, bibliothèque à Chambéry;adhérents;oui;Geneabank liste (à vérifier)
+Maurienne Généalogie;73;Maurienne;https://www.mauriennegenealogie.org;Relevés sur Geneabank, dépouillements de Maurienne;adhérents;oui;Geneabank liste (à vérifier)
+AREDES (Savoie);73;Savoie;https://caids.geneabank.org/form/aredes.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Les Marmottes de Savoie;74/73/01 + Suisse;Savoie, Genevois;https://www.marmottesdesavoie.fr;Relevés sur Geneabank via formulaire propre;adhérents;oui;Geneabank liste
+Chablais-Généalogie;74;Chablais;https://caids.geneabank.org/form/chablais.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Centre Généalogique Savoyard Paris et Région Parisienne;73/74;Savoie (depuis Paris);https://caids.geneabank.org/form/savoieparis.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Société des Amateurs de Généalogie de l'Ardèche (SAGA);07;Ardèche;https://www.saga07.fr;Base de relevés ardéchois;adhérents (à vérifier);oui;RFG annuaire (à vérifier)
+Les Amis de la Région Ardéchoise (LARA);07;Ardèche;https://caids.geneabank.org/form/lara07.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique de la Drôme Provençale (CGDP);26;Drôme sud;https://caids.geneabank.org/form/cgdp26.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Études Généalogiques Drôme Association (EGDA);26;Drôme;https://www.rfgenealogie.com/annuaire/associations;Relevés drômois, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Cercle Généalogique et Héraldique de l'Auvergne et du Velay (CGHAV);63/15/43;Auvergne;https://www.cghav.fr;Base de relevés auvergnats + Geneabank, bibliothèque à Clermont;adhérents;oui;Geneabank liste (à vérifier)
+Association Généalogique d'Aurillac et du Cantal (AGAC);15;Cantal;https://caids.geneabank.org/form/agac.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Association de Recherches sur l'Histoire des Familles (ARHFA);15/46;Cantal, Lot;https://www.arhfa.org;Relevés sur Geneabank (14 281 actes affichés);adhérents;oui;Geneabank (fetch)
+APROGEMERE;15;Cantal;https://www.aprogemere.fr;Base de relevés du Cantal, cartes et dictionnaires de familles;adhérents (à vérifier);oui;RFG annuaire (à vérifier)
+Cercle Généalogique et Héraldique du Bourbonnais (CGHB03);03;Allier;https://www.cghb03.fr;Base de relevés bourbonnais;adhérents (à vérifier);oui;RFG annuaire (à vérifier)
+Allier-Généalogie;03;Allier;https://caids.geneabank.org/form/algen.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Généalogie 43 (AG43);43;Haute-Loire;https://www.rfgenealogie.com/annuaire/associations;Relevés de Haute-Loire, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Généalogie en Corrèze (Brive - Ussel);19;Corrèze (+15, 23, 46, 63);https://www.genealogie-en-correze.fr;Relevés sur Geneabank, base propre;adhérents;oui;Geneabank liste (à vérifier)
+Amitiés Généalogiques du Limousin (AGL87);87;Haute-Vienne, Limousin;https://www.agl87.fr;Base de relevés limousins (ex Bigenet);adhérents (à vérifier);oui;RFG annuaire (à vérifier)
+Cercle Généalogique Poitevin (CGP86);86;Vienne;https://www.cgpoitevin.fr;Relevés sur Geneabank, relevés indexés sur Geneanet (partenariat), publications;adhérents;oui;Geneabank + RFG (à vérifier)
+Cercle Généalogique des Deux-Sèvres (CG79);79;Deux-Sèvres;https://www.cg79.fr;Base de relevés deux-sévriens;adhérents (à vérifier);oui;RFG annuaire (à vérifier)
+Cercle Généalogique de Charentes-Poitou (CGCP);16/17/79/86;Poitou-Charentes;https://www.cgcp.fr;Base de relevés régionale;adhérents;oui;geneawiki (à vérifier)
+Association Généalogique de la Charente (AGC);16;Charente;https://www.genea16.net;Relevés sur Geneabank via formulaire propre (45 956 actes affichés);adhérents;oui;Geneabank (fetch)
+Cercle Généalogique de l'Aunis;17;Aunis, La Rochelle;https://caids.geneabank.org/form/cgaunis.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique de Saintonge;17;Saintonge;https://caids.geneabank.org/form/cgsaintonge.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Centre Généalogique du Sud-Ouest (CGSO);33;Gironde, Sud-Ouest;https://www.cgso.net;Base de relevés girondins et sud-ouest, bibliothèque à Bordeaux;adhérents;oui;(à vérifier)
+Généalogie 33;33;Gironde;https://www.rfgenealogie.com/annuaire/associations;Relevés girondins, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Centre Généalogique des Pyrénées-Atlantiques (CGPA);64;Pyrénées-Atlantiques;https://www.cgpa64.fr;Base de relevés d'actes « Accès aux relevés », codes remis après adhésion;adhérents;oui;site (fetch)
+Amicale Genea24;24;Dordogne;https://www.rfgenealogie.com/annuaire/associations;Relevés périgourdins, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Généalogie en Périgord Noir;24;Sarladais;https://www.rfgenealogie.com/annuaire/associations;Relevés locaux, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+RGA47 (Recherches Généalogiques en Agenais);47;Lot-et-Garonne;https://www.rfgenealogie.com/annuaire/associations;Relevés agenais, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Entraide Généalogique du Midi Toulousain (EGMT);31 + région;Midi toulousain (18 départements sur Geneabank);https://www.egmt.org;Base de relevés en ligne + Geneabank, bibliothèque à Toulouse;adhérents;oui;Geneabank liste
+Cercle Généalogique de Languedoc (CGL);31/09/11/12/30/34/81;Languedoc;http://www.basesgenealogiquesducglanguedoc.fr;Base unifiée des mariages (Hérault, Aude, Aveyron, Gard, Lozère, Tarn), bases soldats de Crimée 1854-56 et morts napoléoniens, recherche standard libre non filiative, version complète adhérents, + Geneabank;libre (restreint) / adhérents;oui;RFG 2012 (fetch)
+Union Généalogique d'Occitanie Historique (UGOH);30/11/48/43;Occitanie;https://www.rfgenealogie.com/annuaire/associations;Union d'associations, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Cercle Généalogique Héraultais (LGO);34;Hérault;https://www.rfgenealogie.com/annuaire/associations;Relevés héraultais, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Narbonne Généalogie;11;Narbonnais;https://caids.geneabank.org/form/narbonne.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Association Catalane de Généalogie (ACG66);66/11 + Espagne;Roussillon;https://www.acg66.org;Relevés sur Geneabank;adhérents;oui;Geneabank liste (à vérifier)
+Cercle de Généalogie en Uzège et Gard (GUG30);30;Gard;https://www.gugard.fr;Relevés sur Geneabank via formulaire propre;adhérents;oui;Geneabank liste
+Cercle Généalogique Gard-Lozère;30/48;Gard, Lozère;https://www.rfgenealogie.com/annuaire/associations;Relevés, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Association des Chercheurs et Généalogistes des Cévennes (ACGC);30/48/12/81;Cévennes;https://www.rfgenealogie.com/annuaire/associations;Relevés cévenols, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Cercle Lozérien de Généalogie (CLG48);48;Lozère;https://caids.geneabank.org/form/clg48.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique de l'Aveyron;12;Aveyron;https://www.rfgenealogie.com/annuaire/associations;Relevés aveyronnais, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Cercle Généalogique du Quercy;82/46;Quercy;https://caids.geneabank.org/form/cgquercy.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Entraide Généalogique de Tarn-et-Garonne (EGTG);82;Tarn-et-Garonne;https://caids.geneabank.org/form/egtg.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+GENDEP82;82;Tarn-et-Garonne;https://caids.geneabank.org/form/gendep82.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Centre Généalogique Midi-Provence (CGMP);13/83/84/05/06/26;Provence;http://cgmp.phpnet.org/cgmp/;Intégralité de la revue Provence Généalogie (1976-2016) en ligne gratuitement via catalogue PMB, bibliothèque à Marseille, base de relevés provençaux;libre (revue) / adhérents (relevés);partiel;RFG 2019 (fetch)
+Association Généalogique des Bouches-du-Rhône (AG13);13/2B;Bouches-du-Rhône;https://www.ag13.org;Relevés sur Geneabank (13 et Haute-Corse);adhérents;oui;Geneabank liste (à vérifier)
+Association Généalogique des Alpes-Maritimes (AGAM);06;Alpes-Maritimes;https://www.agam-06.com;Relevés sur Geneabank, bulletins PDF en ligne, tutoriels;adhérents (bulletins libres);oui;Geneabank + site PDF
+Cercle d'Entraide Généalogique des Alpes-Maritimes et d'Ailleurs (CEGAMA);06;Alpes-Maritimes;https://caids.geneabank.org/form/cegama.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique du Pays Cannois;06;Cannes;https://caids.geneabank.org/form/cgpc06.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Association Généalogique du Pays Grassois (AGPG06);06;Grasse;https://caids.geneabank.org/form/agpg06/index.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique 83;83/06;Var;https://caids.geneabank.org/form/cgenea83.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Groupement Amical des Généalogistes 83 (GAG83);83/04/78;Var;https://www.geneabank.org/gensocs/gag.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique de Vaucluse et terres adjacentes;84;Vaucluse;https://caids.geneabank.org/form/cgvaucluse.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique des Alpes de Haute-Provence (Genea04);04;Alpes-de-Haute-Provence;https://caids.geneabank.org/form/genea04.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Association Généalogique des Hautes-Alpes (AGHA);05;Hautes-Alpes;https://www.agha.fr;Relevés sur Geneabank, bulletins Flash FFG archivés en PDF;adhérents;oui;Geneabank + site PDF
+Recherches sur l'Histoire des Familles Corses (RHFC);2A/2B;Corse;https://www.rfgenealogie.com/annuaire/associations;Relevés corses, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Corsica Genealugia;2A/2B;Corse;https://www.corsicagenealugia.com;Base collaborative de relevés corses en accès libre;libre (à vérifier);oui;(à vérifier)
+Généalogie et Histoire de la Caraïbe (GHC);971/972;Antilles, Guyane;https://www.ghcaraibe.org;Bulletins et articles en ligne, papiers de Gabriel Debien, index des chroniqueurs, généalogies en PDF, registres par commune, base StPierre 1902 (stpierre1902.org), relevés Guadeloupe sur Geneabank;libre (partie) / adhérents (Geneabank);oui;site (fetch)
+Cercle Généalogique de Bourbon (CGB);974;La Réunion;https://www.cgb-reunion.re;Base de relevés réunionnais (dictionnaire des familles de l'île Bourbon);adhérents (à vérifier);oui;(à vérifier)
+Généalogie Algérie Maroc Tunisie (GAMT);13;Français d'Afrique du Nord;https://www.genealogie-gamt.org;Plus de 4 M de relevés : état civil européen d'Algérie 1905-1922, actes de Tunisie 1797-1882, naturalisations 1830-1938, revue indexée, recherche patronymique libre, détail par points pour adhérents;libre (index) / adhérents (détail);oui;RFG (fetch)
+Cercle de Généalogie Juive (CGJ);75;généalogie juive France et diaspora;https://www.genealoj.org;Bases BECANE, BIKETTE, REGIE (relevés Salonique 71 785 enregistrements), dénombrement des juifs d'Alsace 1784, catalogue de bibliothèque, revue Genealo-J, conférences en ligne;adhérents (partie libre);oui;site (fetch)
+Huguenots de France (Comité protestant des Amitiés françaises à l'étranger);75;protestants, refuge huguenot;https://www.huguenots.fr;Articles en ligne, pas de base d'actes, cotisation 30 €;libre (articles);non;site (fetch)
+Cercle Généalogique des Postiers, Télécommunicants et Tiers associés (CGPTT);75;cercle d'entreprise La Poste/Télécom;https://www.cgptt.fr;Relevés sur Geneabank (02, 55), fichiers de personnel postal dépouillés;adhérents;oui;Geneabank liste (à vérifier)
+Section Généalogie de la Banque de France;75/89;cercle d'entreprise;https://caids.geneabank.org/form/geneabdf.html;Relevés sur Geneabank (Yonne);adhérents;oui;Geneabank liste
+Cercle Généalogique des Cheminots (CGCHEM);75;cercle d'entreprise SNCF;https://www.cgcheminots.fr;Entraide pour retrouver les dossiers de cheminots (ANMT, archives SNCF, dossiers PLM indexés sur Geneanet), relevés, publications;adhérents (à vérifier);partiel;(à vérifier)
+Union Artistique et Intellectuelle des Cheminots (UAICF, sections généalogie Lyon et Toulouse);69/31;cercle d'entreprise SNCF;https://www.rfgenealogie.com/annuaire/associations;Sections généalogie de cheminots, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Section Généalogie-Histoire SAFRAN Villaroche;77;cercle d'entreprise;https://www.rfgenealogie.com/annuaire/associations;Offre en ligne non confirmée;à vérifier;non;RFG annuaire
+Association Généalogie Pour Tous (AGPT);07/35/70 + Argentine, Chili, Tunisie;émigration et Outre-mer;https://caids.geneabank.org/form/agpt.html;Relevés sur Geneabank (dont relevés d'émigrés en Argentine, Chili, Tunisie);adhérents;oui;Geneabank liste
+Fédération Québécoise des Sociétés de Généalogie (FQSG) - Fichier Origine;Québec;émigration France-Québec;https://www.fichierorigine.com;Fichier Origine : répertoire des pionniers venus de France au Québec avec commune d'origine et actes de baptême retrouvés, gratuit;libre;oui;(à vérifier)
+Société Généalogique Canadienne-Française (SGCF);Québec;émigration France-Nouvelle-France;https://www.sgcf.com;Bibliothèque à Montréal, bases en ligne (dictionnaire, relevés, fonds), accès membres;adhérents;oui;(à vérifier)
+Association Valaisanne d'Études Généalogiques (AVEG);Suisse (Valais);frontaliers Savoie-Valais;https://www.rfgenealogie.com/annuaire/associations;Relevés valaisans, offre en ligne à vérifier;à vérifier;à vérifier;RFG annuaire
+GeniWal;Belgique (Wallonie);frontaliers Nord-Ardennes;https://www.geniwal.eu;Base de relevés wallons (GeniBase), index libres, détail membres;adhérents (index libres);oui;RFG annuaire (à vérifier)
+Saint-Marin Généalogie;Saint-Marin;émigration;https://www.geneabank.org/gensocs/smg.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Cercle Généalogique et Héraldique de la Principauté de Monaco;Monaco;Monaco, Riviera;https://www.rfgenealogie.com/annuaire/associations;Offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Centre d'Études Supérieures de la Renaissance (CESR, Univ. Tours) - base Renumar;37;Touraine, Berry, Paris (XVe-XVIe);http://renumar.univ-tours.fr/base/;19 771 analyses ou transcriptions d'actes notariés tourangeaux, berruyers et parisiens, recherche par patronyme et lieu, sans images;libre;oui;RFG (fetch)
+Foyer rural de Lattes (section généalogie);34;Lattes;https://caids.geneabank.org/form/lattes.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Amis de Lespignan;34;Lespignan;https://www.geneabank.org/gensocs/amislespignan.html;Relevés sur Geneabank;adhérents;oui;Geneabank liste
+Les Amis du Vieux Calais;62;Calais;https://www.rfgenealogie.com/annuaire/associations;Société d'histoire locale, publications, offre en ligne non confirmée;à vérifier;non;RFG annuaire
+Cercle Généalogique du Toulois;54;Toul;https://www.rfgenealogie.com/annuaire/associations;Relevés toulois versés à l'UCGL;adhérents;oui;RFG annuaire (à vérifier)
+Cercle Généalogique du Lunévillois;54;Lunéville;https://www.rfgenealogie.com/annuaire/associations;Relevés versés à l'UCGL;adhérents;oui;RFG annuaire (à vérifier)
+Cercle Généalogique du Pays de Briey;54;Briey;https://www.rfgenealogie.com/annuaire/associations;Relevés versés à l'UCGL;adhérents;oui;RFG annuaire (à vérifier)
+Entraide Généalogique Audoise (EGA11);11;Aude;https://www.rfgenealogie.com/annuaire/associations;Relevés audois, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Association Généalogique et Historique de Provence et d'Ailleurs (AGHPA);13;Bouches-du-Rhône;https://www.rfgenealogie.com/annuaire/associations;Relevés, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
+Cercle Généalogique Maralpin;06;Alpes-Maritimes;https://www.rfgenealogie.com/annuaire/associations;Relevés, offre en ligne non confirmée;à vérifier;à vérifier;RFG annuaire
