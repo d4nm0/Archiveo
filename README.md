@@ -9,15 +9,15 @@
 ## Contenu du dépôt
 
 ```
-site/        Le site : index.html + data.js (statique, aucun serveur nécessaire)
+index.html   Le site (statique, aucun serveur nécessaire) — data.js contient les données
 data/        Les données sources (5 fichiers CSV, séparateur « ; ») + le tableur Excel consolidé
-scripts/     build_data.py (CSV → site/data.js), build_xlsx.py (CSV → tableur), archiveo_compte.py (comptage en ligne de commande)
+scripts/     build_data.py (CSV → data.js), build_xlsx.py (CSV → tableur), archiveo_compte.py (comptage en ligne de commande)
 extension/   Extension Chrome/Edge qui compte les résultats dans votre navigateur
 ```
 
 ## Le site
 
-Ouvrez `site/index.html` dans un navigateur, ou servez le dossier (`python -m http.server 8000` dans `site/`).
+En ligne : **https://danmonceau.fr/Archiveo/**. En local : ouvrez `index.html` dans un navigateur, ou servez le dossier (`python -m http.server 8000`).
 
 Deux modes :
 
@@ -45,7 +45,7 @@ Pour ajouter une règle de site : dans `counter.js`, section « Règles propres 
 ## Mettre à jour les données
 
 1. Modifier les CSV dans `data/` (séparateur `;` — ne pas utiliser `;` à l'intérieur d'un champ).
-2. `python3 scripts/build_data.py` → régénère `site/data.js`.
+2. `python3 scripts/build_data.py` → régénère `data.js`.
 3. `python3 scripts/build_xlsx.py` → régénère le tableur (nécessite `openpyxl`).
 
 Colonnes du tableur / des CSV : voir l'onglet **Synthèse** du fichier Excel (légende).
