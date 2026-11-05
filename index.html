@@ -95,7 +95,7 @@ footer{max-width:1140px;margin:0 auto;padding:0 20px 40px;color:var(--muted);fon
   <div class="modes">
     <button class="mode on" data-m="annuaire">Annuaire</button>
     <button class="mode" data-m="qui">Qui peut me répondre ?</button>
-    <a class="mode add" href="https://github.com/d4nm0/Archiveo/issues/new?template=ajout.yml" target="_blank" rel="noopener">+ Proposer un ajout</a>
+    <a class="mode add" href="https://docs.google.com/forms/d/e/1FAIpQLSf_EWSjDkFgopHnUzdTPbpLzltVfXLPjAGyppfI6ad-6Op-1A/viewform?usp=pp_url&entry.811251541=Ajout" target="_blank" rel="noopener">+ Proposer un ajout</a>
   </div>
   <section id="pane-qui" hidden>
     <form class="qform" id="qform">
@@ -132,7 +132,9 @@ footer{max-width:1140px;margin:0 auto;padding:0 20px 40px;color:var(--muted);fon
 <footer>Données collectées le 4 nov. 2026 (data.gouv.fr, Geneanet, FranceArchives, annuaires spécialisés, sites des services). Les lignes « à vérifier » attendent un contrôle manuel. Chaque fiche a un lien « Corriger » ; le bouton « Proposer un ajout » permet de signaler un service manquant. Code et données : <a href="https://github.com/d4nm0/Archiveo">github.com/d4nm0/Archiveo</a>.</footer>
 <script src="data.js"></script>
 <script>
-const REPO_ISSUE="https://github.com/d4nm0/Archiveo/issues/new";
+const FORM="https://docs.google.com/forms/d/e/1FAIpQLSf_EWSjDkFgopHnUzdTPbpLzltVfXLPjAGyppfI6ad-6Op-1A/viewform?usp=pp_url";
+const FORM_FAMILLE={departementale:"départementales",nationale:"nationales-militaires",municipale:"municipales-régionales",association:"association",privee:"entreprise-culte-privé"};
+function lienCorrection(d){return FORM+"&entry.811251541=Correction&entry.406488118="+encodeURIComponent(d.nom)+"&entry.1683125055="+encodeURIComponent(d.url||"")+"&entry.289349202="+encodeURIComponent(FORM_FAMILLE[d.cat]||"")+"&entry.1476301625="+encodeURIComponent([d.num,d.territoire||d.region||""].filter(Boolean).join(" "));}
 const CATS=[["all","Tout"],["departementale","Départementales"],["nationale","Nationales & guerres"],["municipale","Municipales & régionales"],["association","Associations"],["privee","Entreprises & privées"],["fav","★ Favoris"]];
 const FONDS=["État civil","Tables décennales","Recensements","Registres matricules","Cadastre","Notariat","Successions","Presse"];
 let cat="all", fond=null, nomOnly=false, limit=60;
@@ -187,7 +189,7 @@ function render(){
     const [oc,ol]=d.fonds?overall(d):["",""];
     c.innerHTML=`<div class="top"><div><div class="k">${sub}</div><h3>${d.nom}</h3><div class="site">${d.site||"—"}</div></div><button class="star ${favs.has(d.id)?"on":""}" title="Favori">★</button></div>
       ${body}
-      <div class="foot"><span>${d.fonds?`<span class="badge ${oc}">${ol}</span>`:""}${d.verif?` <span class="badge warn">à vérifier</span>`:""} <a class="fix" target="_blank" rel="noopener" href="${REPO_ISSUE}?template=correction.yml&title=${encodeURIComponent("[Correction] "+d.nom)}&fiche=${encodeURIComponent(d.nom)}&url=${encodeURIComponent(d.url||"")}">Corriger</a></span>
+      <div class="foot"><span>${d.fonds?`<span class="badge ${oc}">${ol}</span>`:""}${d.verif?` <span class="badge warn">à vérifier</span>`:""} <a class="fix" target="_blank" rel="noopener" href="${lienCorrection(d)}">Corriger</a></span>
       <a class="btn ${d.url?"":"off"}" href="${d.url||"#"}" target="_blank" rel="noopener">Ouvrir ↗</a></div>`;
     c.querySelector(".star").onclick=()=>{favs.has(d.id)?favs.delete(d.id):favs.add(d.id);save();render()};
     grid.appendChild(c);

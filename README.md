@@ -44,7 +44,7 @@ Pour ajouter une règle de site : dans `counter.js`, section « Règles propres 
 
 ## Contribuer
 
-Depuis le site : lien **« Corriger »** sur chaque fiche, bouton **« Proposer un ajout »** en tête de page. Les deux ouvrent un formulaire d'issue pré-rempli sur ce dépôt (compte GitHub nécessaire). Les corrections acceptées sont reportées dans les CSV de `data/`, puis `data.js` est régénéré.
+Depuis le site : lien **« Corriger »** sur chaque fiche, bouton **« Proposer un ajout »** en tête de page. Les deux ouvrent un formulaire Google pré-rempli (aucun compte nécessaire) ; les réponses arrivent dans une feuille de calcul. Les développeurs peuvent aussi ouvrir une issue ou une pull request ici. Les corrections acceptées sont reportées dans les CSV de `data/`, puis `data.js` est régénéré.
 
 ## Mettre à jour les données
 
