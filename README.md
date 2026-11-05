@@ -2,7 +2,7 @@
 
 **Annuaire des archives en ligne utiles à la généalogie en France** — et un outil qui dit, pour un nom, une période et un lieu, *quelles* archives peuvent répondre.
 
-816 services recensés : archives départementales (101), nationales / militaires / guerres (52), municipales et régionales (114), associations et cercles généalogiques (190), entreprises, cultes, hôpitaux, écoles (71), et 288 autres services issus de l'annuaire officiel des archives publiques (municipales, régionales, hospitalières, universitaires, privées) dont les fonds en ligne restent à décrire.
+816 services recensés : archives départementales (101), nationales / militaires / guerres (52), municipales et régionales (114), associations et cercles généalogiques (190), entreprises, cultes, hôpitaux, écoles (71), et 288 autres services issus de l'annuaire officiel des archives publiques (municipales, régionales, hospitalières, universitaires, privées) dont les fonds en ligne restent à décrire. S'y ajoutent 59 collections indexées (MyHeritage, catalogue France) avec nombre de documents, type et département.
 
 > Prototype. Les données ont été collectées le 4 novembre 2026 à partir de sources de synthèse (data.gouv.fr, Geneanet, FranceArchives, annuaires spécialisés, sites des services). Une partie des lignes porte la mention **« à vérifier »** : URL non confirmée ou contenu non vérifié. Les contributions sont bienvenues.
 
@@ -76,6 +76,7 @@ Interroge les bases à API ouverte (fichier des décès INSEE via matchID, Galli
 - [FranceArchives](https://francearchives.gouv.fr/) et l'[Annuaire des services d'archives publiques en France](https://data.culturecommunication.gouv.fr/explore/dataset/annuaire-des-services-darchives-publiques-en-france/) (ministère de la Culture) — copie dans `data/annuaire_services_archives_officiel.csv`
 - [Geneabank — associations participantes](https://www.geneabank.org/gensocs/indexfr.html)
 - [La Revue française de Généalogie — annuaire](https://www.rfgenealogie.com/annuaire/associations)
+- [MyHeritage — catalogue des collections France](https://www.myheritage.fr/research/records-catalog/france)
 - Annuaires aupresdenosracines.com, archiveenligne.fr, genealogiepratique.fr
 
 ## Licence

@@ -64,5 +64,12 @@ for r in load("officiel.csv"):
         "desc":"Service recensé dans l'annuaire officiel des archives publiques (FranceArchives). Fonds en ligne non encore décrits : à compléter.",
         "note":"Fiche FranceArchives : "+r["lien_francearchives"],"verif":False})
 
+for r in load("collections.csv"):
+    nb=r["nb_documents"]
+    out.append({"cat":"collection","nom":r["collection"],"type":r["source"]+" · "+r["type"],"num":r["departement"],"territoire":"France" if not r["departement"] else "",
+        "region":REG.get(r["departement"],""),"url":r["url"],"site":r["source"],"periode":r["periode"],"ftype":r["type"],"nb":int(nb) if nb else None,
+        "desc":(f"{int(nb):,}".replace(","," ")+" documents indexés" if nb else "Nombre de documents non relevé")+(" · "+r["periode"] if r["periode"] else "")+". Recherche par nom ; consultation sur abonnement.",
+        "acces":r["acces"],"nominatif":"oui","verif":False})
+
 open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data.js"),"w",encoding="utf-8").write("const DATA="+json.dumps(out,ensure_ascii=False)+";")
 print(len(out), sum(1 for o in out if o["verif"]))

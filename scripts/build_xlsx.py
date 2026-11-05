@@ -26,6 +26,8 @@ SHEETS = [
    "acces":"Accès","recherche_nominative":"Recherche par nom","source":"Source / vérification"}),
  ("Autres (annuaire officiel)", "officiel.csv",
   {"nom":"Service","categorie":"Catégorie officielle","code_postal":"Dép.","ville":"Ville","url":"URL","lien_francearchives":"Fiche FranceArchives","source":"Source"}),
+ ("Collections indexées", "collections.csv",
+  {"source":"Site","collection":"Collection","type":"Type","departement":"Dép.","periode":"Période","nb_documents":"Documents","url":"URL","acces":"Accès","source_releve":"Source"}),
  ("Entreprises & privées", "privees.csv",
   {"nom":"Organisme","categorie":"Catégorie","url":"URL","contenu_genealogique":"Contenu utile en généalogie",
    "acces":"Accès","recherche_nominative":"Recherche par nom","source":"Source / vérification"}),
