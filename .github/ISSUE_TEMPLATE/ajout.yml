@@ -1,0 +1,41 @@
+name: Proposer un ajout
+description: Un service d'archives, une association ou une base qui manque à l'annuaire
+title: "[Ajout] "
+labels: ["ajout"]
+body:
+  - type: input
+    id: nom
+    attributes:
+      label: Nom du service / de l'association
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Site web
+    validations:
+      required: true
+  - type: dropdown
+    id: famille
+    attributes:
+      label: Famille
+      options:
+        - Archives départementales
+        - Archives nationales, militaires, guerres
+        - Archives municipales ou régionales
+        - Association ou cercle généalogique
+        - Entreprise, culte, hôpital, école, autre fonds privé
+    validations:
+      required: true
+  - type: input
+    id: territoire
+    attributes:
+      label: Département / territoire
+      placeholder: "ex. 45 Loiret, ou Lorraine, ou national"
+  - type: textarea
+    id: contenu
+    attributes:
+      label: Ce qui est consultable en ligne
+      description: Fonds, périodes, conditions d'accès (libre, adhérents, payant), recherche par nom possible ou non.
+    validations:
+      required: true

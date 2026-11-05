@@ -42,6 +42,10 @@ Fonctionnement : `bridge.js` fait le pont page ↔ extension (`window.postMessag
 
 Pour ajouter une règle de site : dans `counter.js`, section « Règles propres à certains sites », tester `location.hostname` et renvoyer `{ count, status, snippet }`.
 
+## Contribuer
+
+Depuis le site : lien **« Corriger »** sur chaque fiche, bouton **« Proposer un ajout »** en tête de page. Les deux ouvrent un formulaire d'issue pré-rempli sur ce dépôt (compte GitHub nécessaire). Les corrections acceptées sont reportées dans les CSV de `data/`, puis `data.js` est régénéré.
+
 ## Mettre à jour les données
 
 1. Modifier les CSV dans `data/` (séparateur `;` — ne pas utiliser `;` à l'intérieur d'un champ).

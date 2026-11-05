@@ -1,0 +1,35 @@
+name: Corriger une fiche
+description: Signaler une erreur ou un complément sur un service déjà dans l'annuaire
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: input
+    id: fiche
+    attributes:
+      label: Fiche concernée
+      description: Nom du service tel qu'il apparaît sur le site
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL actuelle dans l'annuaire
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type de correction
+      options:
+        - Lien mort ou URL changée
+        - Fonds en ligne manquant ou en trop
+        - Période inexacte
+        - Mention « à vérifier » à lever (j'ai vérifié)
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: Ce qu'il faut changer
+      description: La bonne information, et si possible où vous l'avez vue (lien).
+    validations:
+      required: true
